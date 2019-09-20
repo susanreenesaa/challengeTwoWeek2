@@ -1,6 +1,6 @@
 function duplicatesAndVowels(name) {
   //sorting out vowels in a string
-  const vowels = name.match(/[aeiouAEIOU]/gi);
+  const vowels = name.match(/[aeiou]/gi);
   //   removing duplicate vowels from the string
   const uniqueVowels = [...new Set(vowels)].join("");
   //   getting duplicates from the original string
@@ -12,5 +12,7 @@ function duplicatesAndVowels(name) {
     .match(/(.)\1+/g).length; //it matches the same subsequent letters
   var x = [uniqueVowels, numberOfDuplicates];
   console.log(x);
+  
 }
-duplicatesAndVowels("happy coding at andela");
+
+duplicatesAndVowels("hAppy  codIng at andEla");
