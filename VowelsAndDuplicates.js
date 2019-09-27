@@ -1,5 +1,6 @@
 function duplicatesAndVowels(name) {
   //sorting out vowels in a string
+  if(name.length>2){
   const vowels = name.match(/[aeiou]/gi);
   //   removing duplicate vowels from the string
   const uniqueVowels = [...new Set(vowels)].join("");
@@ -11,8 +12,14 @@ function duplicatesAndVowels(name) {
     .join("")
     .match(/(.)\1+/g).length; //it matches the same subsequent letters
   var x = [uniqueVowels, numberOfDuplicates];
-  console.log(x);
+  return (x);
   
 }
+else{
+  return "The string should be of two characters or more"
+}
+}
 
-duplicatesAndVowels("hAppy  codIng at andEla");
+console.log(duplicatesAndVowels("hAppy  codIng at andEla"));
+
+module.exports= duplicatesAndVowels;

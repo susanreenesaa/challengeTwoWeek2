@@ -1,0 +1,14 @@
+{
+  "name": "challengetwoweek2",
+  "version": "1.0.0",
+  "main": "VowelsAndDuplicates.js",
+  "repository": "https://github.com/susanreenesaa/challengeTwoWeek2.git",
+  "author": "reenesa <susannins@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
