@@ -15,3 +15,4 @@ test('returns fizz when sum of length is divisible by 5 ', () => {
 test('returns sum of lengths if it is not divisible by 3 and 5 ', () => {
     expect(fizzBuzz([1, 2, 3], [1])).toBe(4);
 });
+
